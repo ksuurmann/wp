@@ -1,0 +1,84 @@
+.smEasterEgg {
+  display: none;
+  position: fixed;
+  bottom: 100vh;
+  width: 62px;
+  background-size: contain;
+  cursor: help;
+  z-index: 99999;
+}
+.smEasterEgg svg {
+  display: block;
+}
+
+.smEasterEggMessage {
+  display: none;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    bottom: 100vh;
+  }
+  80% {
+    bottom: 0;
+  }
+  90% {
+    bottom: 2vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-moz-keyframes slide-in-top {
+  0% {
+    bottom: 100vh;
+  }
+  80% {
+    bottom: 0;
+  }
+  90% {
+    bottom: 2vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-o-keyframes slide-in-top {
+  0% {
+    bottom: 100vh;
+  }
+  80% {
+    bottom: 0;
+  }
+  90% {
+    bottom: 2vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    bottom: 100vh;
+  }
+  80% {
+    bottom: 0;
+  }
+  90% {
+    bottom: 2vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.slide-in-top {
+  -webkit-animation: slide-in-top 1.5s linear both;
+     -moz-animation: slide-in-top 1.5s linear both;
+       -o-animation: slide-in-top 1.5s linear both;
+          animation: slide-in-top 1.5s linear both;
+}
+
+/*# sourceMappingURL=eggs.css.map */
