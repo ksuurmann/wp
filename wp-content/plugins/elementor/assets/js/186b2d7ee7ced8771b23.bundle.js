@@ -1,4 +1,4 @@
-/*! elementor - v3.1.1 - 31-01-2021 */
+/*! elementor - v3.1.4 - 10-03-2021 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["node_modules_babel_runtime-corejs2_helpers_objectSpread2_js-assets_dev_js_frontend_handlers_b-376ec2"],{
 
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
@@ -446,7 +446,8 @@ var baseTabs = /*#__PURE__*/function (_elementorModules$fro) {
       $activeTitle.add($activeContent).removeClass(activeClass);
       $activeTitle.attr({
         tabindex: '-1',
-        'aria-selected': 'false'
+        'aria-selected': 'false',
+        'aria-expanded': 'false'
       });
       $activeContent[settings.hideTabFn]();
       $activeContent.attr('hidden', 'hidden');
@@ -462,7 +463,8 @@ var baseTabs = /*#__PURE__*/function (_elementorModules$fro) {
       $requestedTitle.add($requestedContent).addClass(activeClass);
       $requestedTitle.attr({
         tabindex: '0',
-        'aria-selected': 'true'
+        'aria-selected': 'true',
+        'aria-expanded': 'true'
       });
       $requestedContent[settings.showTabFn](animationDuration, function () {
         return elementorFrontend.elements.$window.trigger('resize');
@@ -562,4 +564,4 @@ exports.default = baseTabs;
 /***/ })
 
 }]);
-//# sourceMappingURL=b652ef4fbfb3884eba25.bundle.js.map
+//# sourceMappingURL=186b2d7ee7ced8771b23.bundle.js.map
