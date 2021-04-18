@@ -3,7 +3,7 @@ Contributors: preeve
 Tags: easter, easter egg, easter egg animation
 Requires at least: 3.0.1
 Tested up to: 5.7
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,6 +47,12 @@ Yes! This plugin should be compatible with any host.
 
 
 == Changelog ==
+
+= 1.1.0 =
+* Added features: choose side of page to drop eggs, stop showing egg after popup displayed and maximum number of drops
+
+= 1.0.1 =
+* Bugfix update
 
 = 1.0 =
 * Initial release
