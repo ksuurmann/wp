@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 $is_hidden = isset( $is_hidden ) && $is_hidden;
 $is_pro    = isset( $is_pro_promo ) && $is_pro_promo;
 
@@ -7,7 +9,7 @@ $data_transient_key = 'wp_dark_mode_promo_data';
 
 $data = [
 	'discount_text' => '50% OFF',
-	'is_offer'  => 'no',
+	'is_offer'      => 'no',
 ];
 
 $countdown_time = get_transient( 'wp_darkmode_promo_time' );
@@ -49,29 +51,27 @@ $title          = $is_pro ? $pro_title : $ultimate_title;
 
 ?>
 
-<div class="wp-dark-mode-promo <?php echo !empty($class) ? $class : ''; ?> <?php echo $is_hidden ? 'hidden' : ''; ?>">
+<div class="wp-dark-mode-promo <?php echo ! empty( $class ) ? $class : ''; ?> hidden">
     <div class="wp-dark-mode-promo-inner <?php //echo $data['is_offer'] == 'yes' ? 'black-friday' : ''; ?>">
 
-		<?php if ( $is_hidden ) { ?>
-            <span class="close-promo">&times;</span>
-		<?php } ?>
+        <span class="close-promo">&times;</span>
 
-        <img src="<?php echo wp_dark_mode()->plugin_url( 'assets/images/gift-box.svg' ) ?>" class="promo-img">
+        <img src="<?php echo WP_DARK_MODE_ASSETS . '/images/gift-box.svg'; ?>" class="promo-img">
 
-<!--		--><?php //if ( $data['is_offer'] == 'yes' ) { ?>
-<!--            <div class="black-friday-wrap">-->
-<!--                <h3><img src="--><?php //echo wp_dark_mode()->plugin_url( 'assets/images/holiday-gifts.svg' ) ?><!--" alt=""></h3>-->
-<!---->
-<!--                <div class="ribbon">-->
-<!--                    <div class="ribbon-content">-->
-<!--                        <div class="ribbon-stitches-top"></div>-->
-<!--                        <img src="--><?php //echo wp_dark_mode()->plugin_url( 'assets/images/merry-christmas.svg' ) ?><!--" alt="">-->
-<!--                        <div class="ribbon-stitches-bottom"></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--            </div>-->
-<!--		--><?php //} ?>
+        <!--		--><?php //if ( $data['is_offer'] == 'yes' ) { ?>
+        <!--            <div class="black-friday-wrap">-->
+        <!--                <h3><img src="--><?php //echo WP_DARK_MODE_ASSETS. '/images/holiday-gifts.svg'; ?><!--" alt=""></h3>-->
+        <!---->
+        <!--                <div class="ribbon">-->
+        <!--                    <div class="ribbon-content">-->
+        <!--                        <div class="ribbon-stitches-top"></div>-->
+        <!--                        <img src="--><?php //echo WP_DARK_MODE_ASSETS. '/images/merry-christmas.svg'; ?><!--" alt="">-->
+        <!--                        <div class="ribbon-stitches-bottom"></div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!---->
+        <!--            </div>-->
+        <!--		--><?php //} ?>
 
 		<?php
 
@@ -106,7 +106,7 @@ $title          = $is_pro ? $pro_title : $ultimate_title;
             margin: 0 14px;
 
             width: 50px;
-            background: url(<?php echo wp_dark_mode()->plugin_url('assets/images/timer.svg'); ?>) no-repeat 0 0;
+            background: url(<?php echo WP_DARK_MODE_ASSETS.'/images/timer.svg'; ?>) no-repeat 0 0;
             background-size: contain;
         }
 
@@ -134,12 +134,12 @@ $title          = $is_pro ? $pro_title : $ultimate_title;
             $(document).ready(function () {
 
                 //show popup
-                $(document).on('click', '.image-choose-opt.disabled, .form-table tr.disabled', function (e) {
+                $(document).on('click', '.wp-dark-mode-settings-page .disabled', function (e) {
                     e.preventDefault();
 
-                    if($(this).closest('tr').hasClass('specific_category')){
+                    if ($(this).closest('tr').hasClass('specific_category')) {
                         $(this).closest('form').find('.wp-dark-mode-promo.ultimate_promo').removeClass('hidden');
-                    }else{
+                    } else {
                         $(this).closest('table').next('.wp-dark-mode-promo').removeClass('hidden');
                     }
 
@@ -160,10 +160,10 @@ $title          = $is_pro ? $pro_title : $ultimate_title;
                     $(this).addClass('hidden');
                 });
 
-				<?php
-				if ( ! empty( $countdown_time ) ) {
+		        <?php
+		        if ( ! empty( $countdown_time ) ) {
 
-				?>
+		        ?>
 
                 if (typeof window.timer_set === 'undefined') {
                     window.timer_set = $('.simple_timer').syotimer({
@@ -172,10 +172,10 @@ $title          = $is_pro ? $pro_title : $ultimate_title;
                         day: <?php echo $countdown_time['day']; ?>,
                         hour: <?php echo $countdown_time['hour']; ?>,
                         minute: <?php echo $countdown_time['minute']; ?>,
-//                        second: <?php // echo $countdown_time['second']; ?>,
+//                      second: <?php // echo $countdown_time['second']; ?>,
                     });
                 }
-				<?php } ?>
+		        <?php } ?>
 
             })
         })(jQuery);

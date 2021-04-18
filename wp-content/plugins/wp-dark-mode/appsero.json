@@ -13,6 +13,8 @@
     "assets/scss",
     "block/package.json",
     "block/webpack.config.js",
-    "block/src"
+    "block/src",
+    "wp-dark-mode-promo-data.json",
+    "lcf.md"
   ]
 }

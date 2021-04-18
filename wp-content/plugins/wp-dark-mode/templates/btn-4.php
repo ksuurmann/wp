@@ -1,21 +1,22 @@
-<?php
+<div class="wp-dark-mode-switcher wp-dark-mode-ignore  style-4  <?php echo ! empty( $class ) ? $class : ''; ?> <?php echo 'yes' == $floating
+	? "floating $position" : ''; ?>">
 
-$is_floating = isset($floating) && 'yes' == $floating;
-$position    = wp_dark_mode_get_settings('wp_dark_mode_display', 'switcher_position', 'right_bottom');
-$light_text  = wp_dark_mode_get_settings('wp_dark_mode_display', 'switch_text_light', 'Light');
-$dark_text   = wp_dark_mode_get_settings('wp_dark_mode_display', 'switch_text_dark', 'Dark');
+	<?php
+	!empty($cta_text) && printf( '<span class="wp-dark-mode-switcher-cta wp-dark-mode-ignore">%s <span class="wp-dark-mode-ignore"></span></span>', $cta_text );
+	?>
 
-?>
-<input type="checkbox" id="wp-dark-mode-switch" class="wp-dark-mode-switch">
-<div class="wp-dark-mode-switcher wp-dark-mode-ignore switch-align-<?php echo $align; ?> style-4 <?php echo $is_floating ? "floating $position" : ''; ?>">
+    <div class="<?php echo apply_filters( 'wp_dark_mode/switch_label_class', 'wp-dark-mode-ignore switch-wrap' ); ?>">
+    <img class="sun-light" src="<?php echo WP_DARK_MODE_ASSETS.'/images/btn-4/sun-light.png'; ?>" alt="Light">
+    <img class="sun-dark" src="<?php echo WP_DARK_MODE_ASSETS.'/images/btn-4/sun-dark.png'; ?>" alt="Dark">
 
-    <p><?php echo $light_text; ?></p>
-    <label for="wp-dark-mode-switch">
-        <div class="modes">
-            <img class="light" alt="Light Mode" src="<?php echo wp_dark_mode()->plugin_url('assets/images/btn-4/sun.png'); ?>">
-            <img class="dark" alt="Dark Mode" src="<?php echo wp_dark_mode()->plugin_url('assets/images/btn-4/moon.png'); ?>">
-        </div>
+    <label for="wp-dark-mode-switch" class="wp-dark-mode-ignore">
+        <div class="toggle wp-dark-mode-ignore"></div>
     </label>
-    <p><?php echo $dark_text; ?></p>
+
+    <img class="moon-dark" src="<?php echo WP_DARK_MODE_ASSETS.'/images/btn-4/moon-dark.png'; ?>" alt="Dark">
+    <img class="moon-light" src="<?php echo WP_DARK_MODE_ASSETS.'/images/btn-4/moon-light.png'; ?>" alt="Light">
+
+    </div>
+
 
 </div>
