@@ -2,14 +2,16 @@
 Contributors: socialdude, socialtech
 Tags: share, pop up, popup, share icons, share buttons, social media, social, popups, sharing icons, sharing buttons, social share, sharing
 Requires at least: 3.5
-Tested up to: 5.6
-Stable tag: 2.6.4
+Tested up to: 5.7
+Stable tag: 2.6.6
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Share buttons and pop up share icons for social media sharing 
 
 == Description ==
+
+**Try it out on your free dummy site: Click here => [https://tastewp.com/new/?pre-installed-plugin-slug=ultimate-social-media-icons](https://tastewp.com/new/?pre-installed-plugin-slug=ultimate-social-media-icons)** 
 
 Social media plugin which let's you add share icons for RSS, Email, Facebook, Twitter, LinkedIn, Pinterest, Instagram, Youtube, 'Share' (covering 200+ other social media platforms) and upload custom share icons of your choice. 
 
@@ -274,6 +276,14 @@ You cannot use the same plugin twice, however you can install both the USM as we
 
 
 == Changelog ==
+= 2.6.6 =
+* Vulnerability fix
+* Some minor fixes
+
+= 2.6.5 =
+* Plugin Translation added
+* Tooltip issue fixed
+
 = 2.6.4 =
 * Responsive icon refresh issue fixed
 * Added carrousel 
@@ -974,5 +984,5 @@ You cannot use the same plugin twice, however you can install both the USM as we
 
 == Upgrade Notice ==
 
-= 2.6.4 =
+= 2.6.6 =
 Please upgrade

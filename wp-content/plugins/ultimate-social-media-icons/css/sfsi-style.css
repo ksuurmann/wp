@@ -1504,7 +1504,7 @@ ul.tab_3_list li span {
 #accordion .tab2 .facebook_section .inr_cont p.extra_sp,
 #accordion1 .tab2 .facebook_section .inr_cont p.extra_sp {
     padding-top: 7px;
-   
+
 }
 
 .tab2 .custom_section {
@@ -1774,11 +1774,12 @@ h2.optional {
     width: 100%;
     float: left;
     overflow: hidden;
+    margin-left: 2px;
 }
 
 .fb_tool_bdr .sfsi_inside .icon1 {
     /* margin: 0 0 -5px 0;*/
-    margin: 2px 0px 4px 0;
+    margin: 2px 0px 6px 0;
     height: auto;
     display: inline-block;
     float: none;
@@ -1786,7 +1787,7 @@ h2.optional {
 }
 
 .fb_tool_bdr .sfsi_inside .icon2 {
-    margin: 2px 0 3px 0 !important;
+    margin: 2px 0 -2px -8px !important;
     height: auto;
     width: 60px;
     display: inline-block;
@@ -2527,7 +2528,7 @@ h1.abt_titl {
      {
         margin-bottom: 24px;
     }
-    
+
 
     .sfsi_Sicons .sf_twiter {
         margin-bottom: 4px;
@@ -2845,7 +2846,7 @@ ul.cstmskin_iconlist {
     padding: 1px 0;
     position: absolute;
     text-align: center;
-    top: 33px;
+    top: 30px;
     white-space: pre;
     width: 33px;
     height: 24px;
@@ -3052,7 +3053,7 @@ a.pop-up .radio{
     width: 25%!important;
 }
 .sfsi_responsive_icon_gradient{
-    background-image: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.17) 0%,rgba(255, 255, 255, 0.17) 100%); 
+    background-image: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.17) 0%,rgba(255, 255, 255, 0.17) 100%);
     background-image: -moz-linear-gradient(bottom,rgba(0, 0, 0, 0.17) 0%,rgba(255, 255, 255, 0.17) 100%);
     background-image: linear-gradient(to bottom,rgba(0,0,0,.17) 0%,rgba(255,255,255,.17) 100%);
 }
@@ -3061,10 +3062,10 @@ a.pop-up .radio{
 	max-width: 450px;
 	padding-left: 0;
 	padding-bottom: 0;
-} 
+}
  .tab6 .sfsi_tab_3_icns.sfsi_shwthmbfraftr > li {
-	width:100% !important; 
-	max-width:100% !important; 
+	width:100% !important;
+	max-width:100% !important;
 	border-left: 45px solid transparent;
 }
 
@@ -3665,10 +3666,22 @@ ul.sfsi_icn_listing8 li .tb_4_ck{
     max-width: 100%!important;
 }
 
-.sfsi_tool_tip_2.utube_tool_bdr .icon1 { 
-    margin-left: 13px!important; 
+.sfsi_tool_tip_2.utube_tool_bdr .icon1 {
+    margin-left: 13px!important;
 }
 
 .sfsi_shortcode_container .sfsi_wicons {
     z-index: 110 !important;
 }
+/* 
+#usm-normalize-h3-7p {
+  font-size: 20px;
+}
+
+#usm-normalize-h3-7p:hover, #ui-id-13:hover *, #ui-id-13.ui-state-hover #usm-normalize-h3-7p, #ui-id-13.ui-state-active #usm-normalize-h3-7p {
+  color: white;
+}
+
+#ui-id-13.ui-state-hover #usm-normalize-h3-7p span, #ui-id-13.ui-state-active #usm-normalize-h3-7p span {
+  background-color: rgb(184, 38, 42);
+} */

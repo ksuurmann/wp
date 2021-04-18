@@ -121,7 +121,7 @@ function sfsi_footerFeedbackScript()
 		}
 
 		#adminmenu #toplevel_page_sfsi-options div.wp-menu-name {
-			padding: 8px 8px 8px 8px;
+			padding: 8px 8px 8px 0px;
 		}
 
 		ul#adminmenu li.toplevel_page_sfsi-options a.toplevel_page_sfsi-options {

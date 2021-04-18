@@ -260,6 +260,9 @@ class sfsi_SocialHelper
 		$send = 'false';
 		$width = 180;
 		$show_count=0;
+
+		$permalink = esc_url($permalink); /*Vulnerability*/
+		
 		/*$fb_like_html = '<fb:like href="'.$permalink.'" width="'.$width.'" send="'.$send.'" showfaces="false" ';
 		if($show_count) { 
 				$fb_like_html .= 'layout="button"';

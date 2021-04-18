@@ -161,7 +161,7 @@ a#save_all_settings {
 
 /*Admin menu*/
 #adminmenu #toplevel_page_sfsi-options div.wp-menu-name {
-    padding: 8px 8px 8px 8px;
+    padding: 8px 8px 8px 0px;
 }
 ul#adminmenu li.toplevel_page_sfsi-options div.wp-menu-image {
     display: none;
@@ -4716,7 +4716,7 @@ input[type="number"] {
 .sfsi-top-banner-higligted-text a,.sfsi-top-banner-higligted-text span,.sfsi-top-banner-no-decoration{
 text-decoration:none!important;
 }
-.sfsi-top-header-subheading:before,.sfsi-premium-btn:before,.sfsi-premium-btn:after{ 
+.sfsi-top-header-subheading:before,.sfsi-premium-btn:before,.sfsi-premium-btn:after{
     content: "";
     border-color: transparent green;
     border-style: solid;
@@ -4768,7 +4768,7 @@ text-decoration:none!important;
 
 .sfsi-premium-btn a:hover {
     color: #ffffff;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .sfsi_new_prmium_follw .sfsi_banner_dismiss{
@@ -4975,7 +4975,7 @@ text-decoration:none!important;
     margin-bottom: 6px;
 }
 /* End New intro css */
-.sfsi_intro_premium_counter_hours::after,.sfsi_intro_premium_counter_min::after { 
+.sfsi_intro_premium_counter_hours::after,.sfsi_intro_premium_counter_min::after {
     content: ":";
     margin-right: 10px;
     margin-left: 10px;
@@ -4984,12 +4984,12 @@ text-decoration:none!important;
     background-color: white;
 }
 @media only screen and (min-width:1350px) {
-    
-    
+
+
 }
 
 @media (min-width:950px) and (max-width:1312px) {
-    .sfsi_intro_premium_counter_hours::after,.sfsi_intro_premium_counter_min::after { 
+    .sfsi_intro_premium_counter_hours::after,.sfsi_intro_premium_counter_min::after {
         content: ":";
         margin-right: 0px !important;
         margin-left:  0px !important;

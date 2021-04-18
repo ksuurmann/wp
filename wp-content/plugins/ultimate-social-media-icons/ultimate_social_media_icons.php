@@ -6,7 +6,9 @@ Description: Easy to use and 100% FREE social media plugin which adds social med
 
 Author: UltimatelySocial
 Author URI: http://ultimatelysocial.com
-Version: 2.6.4
+Text Domain: ultimate-social-media-icons
+Domain Path: /languages
+Version: 2.6.6
 License: GPLv2 or later
 */
 require_once 'analyst/main.php';
@@ -871,7 +873,7 @@ function sfsi_admin_notice()
 
                 <div style="margin: 9px 0;">
 
-                    <b>Recently switched to https?</b> If you don’t want to lose the Facebook share & like counts <a href="https://www.ultimatelysocial.com/usm-premium/?utm_source=usmi_settings_page&utm_campaign=https_share_counts&utm_medium=banner" target="_blank">have a look at our Premium Plugin</a>, we found a fix for that: <a href="https://www.ultimatelysocial.com/usm-premium/?utm_source=usmi_settings_page&utm_campaign=https_share_counts&utm_medium=banner" target="_blank">Check it out</a>
+                <b><?php _e("Recently switched to https?",'ultimate-social-media-icons') ?></b><?php _e("If you don’t want to lose the Facebook share & like counts",'ultimate-social-media-icons') ?>  <a href="https://www.ultimatelysocial.com/usm-premium/?utm_source=usmi_settings_page&utm_campaign=https_share_counts&utm_medium=banner" target="_blank"><?php _e("have a look at our Premium Plugin",'ultimate-social-media-icons') ?></a><?php _e(", we found a fix for that:",'ultimate-social-media-icons') ?> <a href="https://www.ultimatelysocial.com/usm-premium/?utm_source=usmi_settings_page&utm_campaign=https_share_counts&utm_medium=banner" target="_blank"><?php _e("Check it out",'ultimate-social-media-icons') ?></a>
 
                 </div>
 
@@ -1033,14 +1035,12 @@ function sfsi_admin_notice()
 
                 <div style="margin: 9px 0;">
                     <p class="sfsi_show_notifictaionpragraph">
-
-                        We noticed you are running your site on a PHP version older than 5.4. Please upgrade to a more recent
+                        <?php _e(" We noticed you are running your site on a PHP version older than 5.4. Please upgrade to a more recent
                         version. This is not only important for running the Ultimate Social Media Plugin, but also for security
-                        reasons in general.
+                        reasons in general.",'ultimate-social-media-icons') ?>
 
                         <br>
-
-                        If you do not know how to do the upgrade, please ask your server team or hosting company to do it for you.'
+                        <?php _e("If you do not know how to do the upgrade, please ask your server team or hosting company to do it for you.",'ultimate-social-media-icons') ?>'
 
                     </p>
                 </div>
