@@ -40,7 +40,7 @@ add_filter( 'the_content', 'renym_content_replace' );
 
 /*Use this function to add a note at the end of your content*/
 function renym_content_footer_note( $content ) {
-	$content .= '<footer class="renym-content-footer">Thank you for reading this tutorial. Maybe next time I will let you buy me a coffee! For more WordPress tutorials visit this<a href="http://wpexplorer.com/blog" title="WPExplorer Blog">Blog</a></footer>';
+	$content .= '<footer class="renym-content-footer">Thank you for reading this tutorial. Maybe next time I will let you buy me a coffee! For more WordPress tutorials visit this <a href="http://wpexplorer.com/blog" title="WPExplorer Blog">Blog</a></footer>';
 	return $content;
 }
 add_filter( 'the_content', 'renym_content_footer_note' );
