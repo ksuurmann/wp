@@ -1,0 +1,4 @@
+[02-Jun-2021 00:52:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function _() in /home/kaisasuurmannikt/public_html/wordpress/wp-content/plugins/ultimate-social-media-icons/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/kaisasuurmannikt/public_html/wordpress/wp-content/plugins/ultimate-social-media-icons/index.php on line 2
